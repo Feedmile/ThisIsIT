@@ -1,0 +1,61 @@
+#quizEditor {
+  background-color: var(--backgroundgrey);
+  color: white;
+  padding: 10px 20px;
+
+  #submitQuiz {
+    width: 10%;
+    min-width: 150px;
+  }
+
+  .card {
+    color: black;
+  }
+
+  tbody td {
+    vertical-align: middle;
+  }
+  
+  .input-group {
+    vertical-align: middle;
+  }
+}
+
+// Caret Rotate Animation
+
+.rot-down {
+  animation-duration: 400ms;
+  animation-name: rotDown;
+}
+
+.rot-up {
+  animation-duration: 400ms;
+  animation-name: rotUp;
+}
+
+.up {
+  transform: rotate(0deg);
+}
+
+.down {
+  transform: rotate(90deg);
+}
+
+
+@keyframes rotDown {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotUp {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
